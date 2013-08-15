@@ -1,0 +1,98 @@
+#
+# NOTE! Don't add files that are generated in specific
+# subdirectories here. Add them in the ".gitignore" file
+# in that subdirectory instead.
+#
+# NOTE! Please use 'git ls-files -i --exclude-standard'
+# command after changing this file, to see if there are
+# any tracked files which get ignored after the change.
+#
+# Normal rules
+#
+.*
+*.o
+*.o.*
+*.a
+*.s
+*.ko
+*.so
+*.so.dbg
+*.mod.c
+*.i
+*.lst
+*.symtypes
+*.order
+modules.builtin
+*.elf
+*.gz
+*.bz2
+*.lzma
+*.lzo
+*.patch
+*.gcno
+
+#
+# Top-level generic files
+#
+/tags
+/TAGS
+/linux
+/vmlinux
+/vmlinuz
+/System.map
+/Module.markers
+/Module.symvers
+
+#
+# git files that we don't want to ignore even it they are dot-files
+#
+!.gitignore
+!.mailmap
+
+#
+# Generated include files
+#
+include/config
+include/linux/version.h
+include/generated
+
+# stgit generated dirs
+patches-*
+
+# quilt's files
+patches
+series
+
+# cscope files
+cscope.*
+ncscope.*
+
+# gnu global files
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+
+*.orig
+*~
+\#*#
+arch/arm/boot/compressed/lib1funcs.S
+arch/arm/boot/compressed/piggy.gzip
+arch/arm/boot/compressed/vmlinux
+arch/arm/mach-sun4i/pm/standby/standby.bin
+arch/arm/mach-sun4i/pm/standby/standby.map
+modules/example/Module.symvers
+modules/mali/sun4i/DX910-SW-99002-r2p1-05rel1/src/devicedrv/mali/Module.symvers
+modules/mali/sun4i/DX910-SW-99002-r2p1-05rel1/src/devicedrv/ump/Module.symvers
+modules/mali/sun4i/DX910-SW-99002-r2p1-05rel1/src/devicedrv/ump/arch/arch-ca8-virtex820-m400-1
+modules/wifi/nano-c047.12/kernel/ic/Module.symvers
+modules/wifi/nano-c047.12/kernel/ksdio/Module.symvers
+output/
+arch/arm/mach-sun4i/pm/standby/standby.code
+modules/wifi/usi-bcm4329/v4.218.248.15/open-src/src/dhd/linux/dhd-cdc-sdmmc-gpl*2.6.36-android*/
+modules/wifi/ar6302/AR6K_SDK_ISC.build_3.1_RC.329/host/os/linux/Module.symvers
+modules/wifi/ar6003/AR6kSDK.build_3.1_RC.514/host/os/linux/Module.symvers
+modules/wifi/hw-mw269/v4.218.248.27/open-src/src/dhd/linux/dhd-cdc-sdmmc-gpl*2.6.36-android*/
+modules/wifi/apm/unifi-linux/os_linux/driver/Module.symvers
+modules/wifi/apm/unifi-linux/os_linux/driver/sme_csr/event_pack_unpack
+
